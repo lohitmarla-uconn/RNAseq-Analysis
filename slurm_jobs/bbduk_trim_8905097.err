@@ -1,0 +1,1236 @@
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K10-LCL9055_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K10-LCL9055_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K10-LCL9055_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K10-LCL9055_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.230 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.181 seconds.
+Memory: max=14218m, total=14218m, free=14147m, used=71m
+
+Input is being processed as unpaired
+Started output streams:	0.100 seconds.
+Processing time:   		200.846 seconds.
+
+Input:                  	32688579 reads 		4903286850 bases.
+QTrimmed:               	4844325 reads (14.82%) 	194348550 bases (3.96%)
+KTrimmed:               	1188356 reads (3.64%) 	38480046 bases (0.78%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	578343 reads (1.77%) 	232828596 bases (4.75%)
+Result:                 	32110236 reads (98.23%) 	4670458254 bases (95.25%)
+
+Time:                         	201.132 seconds.
+Reads Processed:      32688k 	162.52k reads/sec
+Bases Processed:       4903m 	24.38m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K10-LCL9055_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K10-LCL9055_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K10-LCL9055_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K10-LCL9055_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.039 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.127 seconds.
+Memory: max=14218m, total=14218m, free=14143m, used=75m
+
+Input is being processed as unpaired
+Started output streams:	0.022 seconds.
+Processing time:   		205.843 seconds.
+
+Input:                  	32688579 reads 		4903286850 bases.
+QTrimmed:               	4636732 reads (14.18%) 	145632062 bases (2.97%)
+KTrimmed:               	1199218 reads (3.67%) 	40653764 bases (0.83%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	390713 reads (1.20%) 	186285826 bases (3.80%)
+Result:                 	32297866 reads (98.80%) 	4717001024 bases (96.20%)
+
+Time:                         	205.999 seconds.
+Reads Processed:      32688k 	158.68k reads/sec
+Bases Processed:       4903m 	23.80m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K12-LCL9056_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K12-LCL9056_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K12-LCL9056_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K12-LCL9056_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.035 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.098 seconds.
+Memory: max=14218m, total=14218m, free=14151m, used=67m
+
+Input is being processed as unpaired
+Started output streams:	0.023 seconds.
+Processing time:   		180.133 seconds.
+
+Input:                  	28872243 reads 		4330836450 bases.
+QTrimmed:               	4271432 reads (14.79%) 	166267194 bases (3.84%)
+KTrimmed:               	1245269 reads (4.31%) 	40181066 bases (0.93%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	490600 reads (1.70%) 	206448260 bases (4.77%)
+Result:                 	28381643 reads (98.30%) 	4124388190 bases (95.23%)
+
+Time:                         	180.258 seconds.
+Reads Processed:      28872k 	160.17k reads/sec
+Bases Processed:       4330m 	24.03m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K12-LCL9056_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K12-LCL9056_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K12-LCL9056_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K12-LCL9056_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.036 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.144 seconds.
+Memory: max=14218m, total=14218m, free=14143m, used=75m
+
+Input is being processed as unpaired
+Started output streams:	0.026 seconds.
+Processing time:   		182.003 seconds.
+
+Input:                  	28872243 reads 		4330836450 bases.
+QTrimmed:               	3430360 reads (11.88%) 	103939005 bases (2.40%)
+KTrimmed:               	1255406 reads (4.35%) 	42390674 bases (0.98%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	273806 reads (0.95%) 	146329679 bases (3.38%)
+Result:                 	28598437 reads (99.05%) 	4184506771 bases (96.62%)
+
+Time:                         	182.178 seconds.
+Reads Processed:      28872k 	158.48k reads/sec
+Bases Processed:       4330m 	23.77m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K13-LCL9057_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K13-LCL9057_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K13-LCL9057_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K13-LCL9057_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.041 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.106 seconds.
+Memory: max=14218m, total=14218m, free=14147m, used=71m
+
+Input is being processed as unpaired
+Started output streams:	0.023 seconds.
+Processing time:   		185.132 seconds.
+
+Input:                  	29540867 reads 		4431130050 bases.
+QTrimmed:               	4207792 reads (14.24%) 	168509669 bases (3.80%)
+KTrimmed:               	1059889 reads (3.59%) 	34152735 bases (0.77%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	502952 reads (1.70%) 	202662404 bases (4.57%)
+Result:                 	29037915 reads (98.30%) 	4228467646 bases (95.43%)
+
+Time:                         	185.266 seconds.
+Reads Processed:      29540k 	159.45k reads/sec
+Bases Processed:       4431m 	23.92m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K13-LCL9057_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K13-LCL9057_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K13-LCL9057_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K13-LCL9057_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.036 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.115 seconds.
+Memory: max=14218m, total=14218m, free=14151m, used=67m
+
+Input is being processed as unpaired
+Started output streams:	0.027 seconds.
+Processing time:   		188.113 seconds.
+
+Input:                  	29540867 reads 		4431130050 bases.
+QTrimmed:               	4150473 reads (14.05%) 	129961167 bases (2.93%)
+KTrimmed:               	1069374 reads (3.62%) 	36125971 bases (0.82%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	344816 reads (1.17%) 	166087138 bases (3.75%)
+Result:                 	29196051 reads (98.83%) 	4265042912 bases (96.25%)
+
+Time:                         	188.260 seconds.
+Reads Processed:      29540k 	156.92k reads/sec
+Bases Processed:       4431m 	23.54m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K15-LCL9058_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K15-LCL9058_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K15-LCL9058_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K15-LCL9058_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.049 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.099 seconds.
+Memory: max=14218m, total=14218m, free=14147m, used=71m
+
+Input is being processed as unpaired
+Started output streams:	0.023 seconds.
+Processing time:   		187.304 seconds.
+
+Input:                  	30250150 reads 		4537522500 bases.
+QTrimmed:               	4315423 reads (14.27%) 	172155210 bases (3.79%)
+KTrimmed:               	1075198 reads (3.55%) 	34050243 bases (0.75%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	511511 reads (1.69%) 	206205453 bases (4.54%)
+Result:                 	29738639 reads (98.31%) 	4331317047 bases (95.46%)
+
+Time:                         	187.431 seconds.
+Reads Processed:      30250k 	161.39k reads/sec
+Bases Processed:       4537m 	24.21m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K15-LCL9058_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K15-LCL9058_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K15-LCL9058_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K15-LCL9058_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.041 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.110 seconds.
+Memory: max=14218m, total=14218m, free=14143m, used=75m
+
+Input is being processed as unpaired
+Started output streams:	0.038 seconds.
+Processing time:   		190.173 seconds.
+
+Input:                  	30250150 reads 		4537522500 bases.
+QTrimmed:               	3831056 reads (12.66%) 	120288061 bases (2.65%)
+KTrimmed:               	1085468 reads (3.59%) 	36085114 bases (0.80%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	318345 reads (1.05%) 	156373175 bases (3.45%)
+Result:                 	29931805 reads (98.95%) 	4381149325 bases (96.55%)
+
+Time:                         	190.326 seconds.
+Reads Processed:      30250k 	158.94k reads/sec
+Bases Processed:       4537m 	23.84m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K16-LCL9059_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K16-LCL9059_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K16-LCL9059_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K16-LCL9059_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.039 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.098 seconds.
+Memory: max=14218m, total=14218m, free=14151m, used=67m
+
+Input is being processed as unpaired
+Started output streams:	0.024 seconds.
+Processing time:   		192.484 seconds.
+
+Input:                  	31075568 reads 		4661335200 bases.
+QTrimmed:               	4508658 reads (14.51%) 	180010181 bases (3.86%)
+KTrimmed:               	1000971 reads (3.22%) 	31757348 bases (0.68%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	532997 reads (1.72%) 	211767529 bases (4.54%)
+Result:                 	30542571 reads (98.28%) 	4449567671 bases (95.46%)
+
+Time:                         	192.611 seconds.
+Reads Processed:      31075k 	161.34k reads/sec
+Bases Processed:       4661m 	24.20m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K16-LCL9059_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K16-LCL9059_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K16-LCL9059_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K16-LCL9059_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.038 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.098 seconds.
+Memory: max=14218m, total=14218m, free=14143m, used=75m
+
+Input is being processed as unpaired
+Started output streams:	0.023 seconds.
+Processing time:   		198.662 seconds.
+
+Input:                  	31075568 reads 		4661335200 bases.
+QTrimmed:               	4407973 reads (14.18%) 	137671730 bases (2.95%)
+KTrimmed:               	1011529 reads (3.26%) 	33717766 bases (0.72%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	363237 reads (1.17%) 	171389496 bases (3.68%)
+Result:                 	30712331 reads (98.83%) 	4489945704 bases (96.32%)
+
+Time:                         	198.788 seconds.
+Reads Processed:      31075k 	156.33k reads/sec
+Bases Processed:       4661m 	23.45m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K17-LCL9060_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K17-LCL9060_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K17-LCL9060_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K17-LCL9060_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.034 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.102 seconds.
+Memory: max=14218m, total=14218m, free=14143m, used=75m
+
+Input is being processed as unpaired
+Started output streams:	0.025 seconds.
+Processing time:   		202.958 seconds.
+
+Input:                  	32707421 reads 		4906113150 bases.
+QTrimmed:               	4718293 reads (14.43%) 	185533105 bases (3.78%)
+KTrimmed:               	893782 reads (2.73%) 	28381603 bases (0.58%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	542584 reads (1.66%) 	213914708 bases (4.36%)
+Result:                 	32164837 reads (98.34%) 	4692198442 bases (95.64%)
+
+Time:                         	203.089 seconds.
+Reads Processed:      32707k 	161.05k reads/sec
+Bases Processed:       4906m 	24.16m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K17-LCL9060_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K17-LCL9060_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K17-LCL9060_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K17-LCL9060_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.036 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.102 seconds.
+Memory: max=14218m, total=14218m, free=14143m, used=75m
+
+Input is being processed as unpaired
+Started output streams:	0.030 seconds.
+Processing time:   		209.324 seconds.
+
+Input:                  	32707421 reads 		4906113150 bases.
+QTrimmed:               	4788660 reads (14.64%) 	148759922 bases (3.03%)
+KTrimmed:               	904130 reads (2.76%) 	30209426 bases (0.62%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	389966 reads (1.19%) 	178969348 bases (3.65%)
+Result:                 	32317455 reads (98.81%) 	4727143802 bases (96.35%)
+
+Time:                         	209.463 seconds.
+Reads Processed:      32707k 	156.15k reads/sec
+Bases Processed:       4906m 	23.42m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K18-LCL9061_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K18-LCL9061_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K18-LCL9061_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K18-LCL9061_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.036 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.116 seconds.
+Memory: max=14218m, total=14218m, free=14143m, used=75m
+
+Input is being processed as unpaired
+Started output streams:	0.027 seconds.
+Processing time:   		219.118 seconds.
+
+Input:                  	35370186 reads 		5305527900 bases.
+QTrimmed:               	4911757 reads (13.89%) 	196746969 bases (3.71%)
+KTrimmed:               	1577708 reads (4.46%) 	50950237 bases (0.96%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	590967 reads (1.67%) 	247697206 bases (4.67%)
+Result:                 	34779219 reads (98.33%) 	5057830694 bases (95.33%)
+
+Time:                         	219.266 seconds.
+Reads Processed:      35370k 	161.31k reads/sec
+Bases Processed:       5305m 	24.20m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K18-LCL9061_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K18-LCL9061_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K18-LCL9061_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K18-LCL9061_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.041 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.105 seconds.
+Memory: max=14218m, total=14218m, free=14143m, used=75m
+
+Input is being processed as unpaired
+Started output streams:	0.027 seconds.
+Processing time:   		224.506 seconds.
+
+Input:                  	35370186 reads 		5305527900 bases.
+QTrimmed:               	4607183 reads (13.03%) 	145543518 bases (2.74%)
+KTrimmed:               	1593992 reads (4.51%) 	54045666 bases (1.02%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	393288 reads (1.11%) 	199589184 bases (3.76%)
+Result:                 	34976898 reads (98.89%) 	5105938716 bases (96.24%)
+
+Time:                         	224.643 seconds.
+Reads Processed:      35370k 	157.45k reads/sec
+Bases Processed:       5305m 	23.62m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K19-LCL9052_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K19-LCL9052_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K19-LCL9052_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K19-LCL9052_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.036 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.108 seconds.
+Memory: max=14218m, total=14218m, free=14143m, used=75m
+
+Input is being processed as unpaired
+Started output streams:	0.024 seconds.
+Processing time:   		217.890 seconds.
+
+Input:                  	35078819 reads 		5261822850 bases.
+QTrimmed:               	5003424 reads (14.26%) 	200524763 bases (3.81%)
+KTrimmed:               	1319115 reads (3.76%) 	42183086 bases (0.80%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	597606 reads (1.70%) 	242707849 bases (4.61%)
+Result:                 	34481213 reads (98.30%) 	5019115001 bases (95.39%)
+
+Time:                         	218.027 seconds.
+Reads Processed:      35078k 	160.89k reads/sec
+Bases Processed:       5261m 	24.13m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K19-LCL9052_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K19-LCL9052_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K19-LCL9052_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K19-LCL9052_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.043 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.105 seconds.
+Memory: max=14218m, total=14218m, free=14147m, used=71m
+
+Input is being processed as unpaired
+Started output streams:	0.023 seconds.
+Processing time:   		222.903 seconds.
+
+Input:                  	35078819 reads 		5261822850 bases.
+QTrimmed:               	4553508 reads (12.98%) 	142877115 bases (2.72%)
+KTrimmed:               	1338159 reads (3.81%) 	44836528 bases (0.85%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	382296 reads (1.09%) 	187713643 bases (3.57%)
+Result:                 	34696523 reads (98.91%) 	5074109207 bases (96.43%)
+
+Time:                         	223.044 seconds.
+Reads Processed:      35078k 	157.27k reads/sec
+Bases Processed:       5261m 	23.59m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K20-LCL9053_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K20-LCL9053_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K20-LCL9053_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K20-LCL9053_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.039 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.106 seconds.
+Memory: max=14218m, total=14218m, free=14143m, used=75m
+
+Input is being processed as unpaired
+Started output streams:	0.031 seconds.
+Processing time:   		191.467 seconds.
+
+Input:                  	30757769 reads 		4613665350 bases.
+QTrimmed:               	4661617 reads (15.16%) 	179072383 bases (3.88%)
+KTrimmed:               	1021156 reads (3.32%) 	32131432 bases (0.70%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	530652 reads (1.73%) 	211203815 bases (4.58%)
+Result:                 	30227117 reads (98.27%) 	4402461535 bases (95.42%)
+
+Time:                         	191.609 seconds.
+Reads Processed:      30757k 	160.52k reads/sec
+Bases Processed:       4613m 	24.08m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K20-LCL9053_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K20-LCL9053_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K20-LCL9053_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K20-LCL9053_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.041 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.103 seconds.
+Memory: max=14218m, total=14218m, free=14139m, used=79m
+
+Input is being processed as unpaired
+Started output streams:	0.024 seconds.
+Processing time:   		195.394 seconds.
+
+Input:                  	30757769 reads 		4613665350 bases.
+QTrimmed:               	4267584 reads (13.87%) 	133621977 bases (2.90%)
+KTrimmed:               	1029870 reads (3.35%) 	33956746 bases (0.74%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	355355 reads (1.16%) 	167578723 bases (3.63%)
+Result:                 	30402414 reads (98.84%) 	4446086627 bases (96.37%)
+
+Time:                         	195.527 seconds.
+Reads Processed:      30757k 	157.31k reads/sec
+Bases Processed:       4613m 	23.60m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K21-LCL9054_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K21-LCL9054_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K21-LCL9054_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K21-LCL9054_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.037 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.126 seconds.
+Memory: max=14218m, total=14218m, free=14151m, used=67m
+
+Input is being processed as unpaired
+Started output streams:	0.023 seconds.
+Processing time:   		207.919 seconds.
+
+Input:                  	33318008 reads 		4997701200 bases.
+QTrimmed:               	4804215 reads (14.42%) 	191185720 bases (3.83%)
+KTrimmed:               	1456268 reads (4.37%) 	48270297 bases (0.97%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	572318 reads (1.72%) 	239456017 bases (4.79%)
+Result:                 	32745690 reads (98.28%) 	4758245183 bases (95.21%)
+
+Time:                         	208.073 seconds.
+Reads Processed:      33318k 	160.13k reads/sec
+Bases Processed:       4997m 	24.02m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K21-LCL9054_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K21-LCL9054_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K21-LCL9054_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K21-LCL9054_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.049 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.114 seconds.
+Memory: max=14218m, total=14218m, free=14143m, used=75m
+
+Input is being processed as unpaired
+Started output streams:	0.042 seconds.
+Processing time:   		211.417 seconds.
+
+Input:                  	33318008 reads 		4997701200 bases.
+QTrimmed:               	4675407 reads (14.03%) 	147003738 bases (2.94%)
+KTrimmed:               	1466224 reads (4.40%) 	50803112 bases (1.02%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	393812 reads (1.18%) 	197806850 bases (3.96%)
+Result:                 	32924196 reads (98.82%) 	4799894350 bases (96.04%)
+
+Time:                         	211.578 seconds.
+Reads Processed:      33318k 	157.47k reads/sec
+Bases Processed:       4997m 	23.62m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K6-LCL9048_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K6-LCL9048_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K6-LCL9048_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K6-LCL9048_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.041 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.126 seconds.
+Memory: max=14218m, total=14218m, free=14143m, used=75m
+
+Input is being processed as unpaired
+Started output streams:	0.024 seconds.
+Processing time:   		196.202 seconds.
+
+Input:                  	31464761 reads 		4719714150 bases.
+QTrimmed:               	4634448 reads (14.73%) 	182961857 bases (3.88%)
+KTrimmed:               	1473852 reads (4.68%) 	47700805 bases (1.01%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	546093 reads (1.74%) 	230662662 bases (4.89%)
+Result:                 	30918668 reads (98.26%) 	4489051488 bases (95.11%)
+
+Time:                         	196.356 seconds.
+Reads Processed:      31464k 	160.24k reads/sec
+Bases Processed:       4719m 	24.04m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K6-LCL9048_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K6-LCL9048_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K6-LCL9048_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K6-LCL9048_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.037 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.117 seconds.
+Memory: max=14218m, total=14218m, free=14147m, used=71m
+
+Input is being processed as unpaired
+Started output streams:	0.043 seconds.
+Processing time:   		201.152 seconds.
+
+Input:                  	31464761 reads 		4719714150 bases.
+QTrimmed:               	4016076 reads (12.76%) 	124670039 bases (2.64%)
+KTrimmed:               	1485206 reads (4.72%) 	50231951 bases (1.06%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	332891 reads (1.06%) 	174901990 bases (3.71%)
+Result:                 	31131870 reads (98.94%) 	4544812160 bases (96.29%)
+
+Time:                         	201.317 seconds.
+Reads Processed:      31464k 	156.29k reads/sec
+Bases Processed:       4719m 	23.44m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K7-LCL9049_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K7-LCL9049_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K7-LCL9049_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K7-LCL9049_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.039 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.108 seconds.
+Memory: max=14218m, total=14218m, free=14151m, used=67m
+
+Input is being processed as unpaired
+Started output streams:	0.023 seconds.
+Processing time:   		206.913 seconds.
+
+Input:                  	33256991 reads 		4988548650 bases.
+QTrimmed:               	4616352 reads (13.88%) 	181599492 bases (3.64%)
+KTrimmed:               	1340765 reads (4.03%) 	42656689 bases (0.86%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	535094 reads (1.61%) 	224256181 bases (4.50%)
+Result:                 	32721897 reads (98.39%) 	4764292469 bases (95.50%)
+
+Time:                         	207.051 seconds.
+Reads Processed:      33256k 	160.62k reads/sec
+Bases Processed:       4988m 	24.09m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K7-LCL9049_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K7-LCL9049_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K7-LCL9049_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K7-LCL9049_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.037 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.109 seconds.
+Memory: max=14218m, total=14218m, free=14147m, used=71m
+
+Input is being processed as unpaired
+Started output streams:	0.042 seconds.
+Processing time:   		211.610 seconds.
+
+Input:                  	33256991 reads 		4988548650 bases.
+QTrimmed:               	4403398 reads (13.24%) 	134104962 bases (2.69%)
+KTrimmed:               	1360846 reads (4.09%) 	45337996 bases (0.91%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	353503 reads (1.06%) 	179442958 bases (3.60%)
+Result:                 	32903488 reads (98.94%) 	4809105692 bases (96.40%)
+
+Time:                         	211.766 seconds.
+Reads Processed:      33256k 	157.05k reads/sec
+Bases Processed:       4988m 	23.56m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K8-LCL9051_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K8-LCL9051_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K8-LCL9051_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K8-LCL9051_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.042 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.100 seconds.
+Memory: max=14218m, total=14218m, free=14151m, used=67m
+
+Input is being processed as unpaired
+Started output streams:	0.024 seconds.
+Processing time:   		230.167 seconds.
+
+Input:                  	36570030 reads 		5485504500 bases.
+QTrimmed:               	5337569 reads (14.60%) 	216551954 bases (3.95%)
+KTrimmed:               	1351207 reads (3.69%) 	43282132 bases (0.79%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	647757 reads (1.77%) 	259834086 bases (4.74%)
+Result:                 	35922273 reads (98.23%) 	5225670414 bases (95.26%)
+
+Time:                         	230.297 seconds.
+Reads Processed:      36570k 	158.80k reads/sec
+Bases Processed:       5485m 	23.82m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K8-LCL9051_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K8-LCL9051_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K8-LCL9051_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K8-LCL9051_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.043 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.110 seconds.
+Memory: max=14218m, total=14218m, free=14147m, used=71m
+
+Input is being processed as unpaired
+Started output streams:	0.029 seconds.
+Processing time:   		230.953 seconds.
+
+Input:                  	36570030 reads 		5485504500 bases.
+QTrimmed:               	4875205 reads (13.33%) 	153014057 bases (2.79%)
+KTrimmed:               	1369794 reads (3.75%) 	45898877 bases (0.84%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	409319 reads (1.12%) 	198912934 bases (3.63%)
+Result:                 	36160711 reads (98.88%) 	5286591566 bases (96.37%)
+
+Time:                         	231.100 seconds.
+Reads Processed:      36570k 	158.24k reads/sec
+Bases Processed:       5485m 	23.74m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K9-LCL9050_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K9-LCL9050_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K9-LCL9050_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K9-LCL9050_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.038 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.116 seconds.
+Memory: max=14218m, total=14218m, free=14147m, used=71m
+
+Input is being processed as unpaired
+Started output streams:	0.023 seconds.
+Processing time:   		228.080 seconds.
+
+Input:                  	36576453 reads 		5486467950 bases.
+QTrimmed:               	5253900 reads (14.36%) 	210593584 bases (3.84%)
+KTrimmed:               	1473264 reads (4.03%) 	47117227 bases (0.86%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	627959 reads (1.72%) 	257710811 bases (4.70%)
+Result:                 	35948494 reads (98.28%) 	5228757139 bases (95.30%)
+
+Time:                         	228.224 seconds.
+Reads Processed:      36576k 	160.27k reads/sec
+Bases Processed:       5486m 	24.04m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//K9-LCL9050_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//K9-LCL9050_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//K9-LCL9050_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//K9-LCL9050_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.040 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.135 seconds.
+Memory: max=14218m, total=14218m, free=14147m, used=71m
+
+Input is being processed as unpaired
+Started output streams:	0.025 seconds.
+Processing time:   		233.593 seconds.
+
+Input:                  	36576453 reads 		5486467950 bases.
+QTrimmed:               	5071131 reads (13.86%) 	159276624 bases (2.90%)
+KTrimmed:               	1494401 reads (4.09%) 	50010632 bases (0.91%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	426509 reads (1.17%) 	209287256 bases (3.81%)
+Result:                 	36149944 reads (98.83%) 	5277180694 bases (96.19%)
+
+Time:                         	233.759 seconds.
+Reads Processed:      36576k 	156.47k reads/sec
+Bases Processed:       5486m 	23.47m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//W10-LCL9040_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//W10-LCL9040_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//W10-LCL9040_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//W10-LCL9040_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.037 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.111 seconds.
+Memory: max=14218m, total=14218m, free=14151m, used=67m
+
+Input is being processed as unpaired
+Started output streams:	0.024 seconds.
+Processing time:   		224.200 seconds.
+
+Input:                  	35943443 reads 		5391516450 bases.
+QTrimmed:               	5223532 reads (14.53%) 	212179041 bases (3.94%)
+KTrimmed:               	1437793 reads (4.00%) 	45914721 bases (0.85%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	639139 reads (1.78%) 	258093762 bases (4.79%)
+Result:                 	35304304 reads (98.22%) 	5133422688 bases (95.21%)
+
+Time:                         	224.340 seconds.
+Reads Processed:      35943k 	160.22k reads/sec
+Bases Processed:       5391m 	24.03m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//W10-LCL9040_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//W10-LCL9040_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//W10-LCL9040_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//W10-LCL9040_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.035 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.138 seconds.
+Memory: max=14218m, total=14218m, free=14143m, used=75m
+
+Input is being processed as unpaired
+Started output streams:	0.023 seconds.
+Processing time:   		226.152 seconds.
+
+Input:                  	35943443 reads 		5391516450 bases.
+QTrimmed:               	4488628 reads (12.49%) 	143794313 bases (2.67%)
+KTrimmed:               	1450365 reads (4.04%) 	48459052 bases (0.90%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	391107 reads (1.09%) 	192253365 bases (3.57%)
+Result:                 	35552336 reads (98.91%) 	5199263085 bases (96.43%)
+
+Time:                         	226.318 seconds.
+Reads Processed:      35943k 	158.82k reads/sec
+Bases Processed:       5391m 	23.82m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//W11-LCL9041_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//W11-LCL9041_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//W11-LCL9041_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//W11-LCL9041_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.040 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.102 seconds.
+Memory: max=14218m, total=14218m, free=14151m, used=67m
+
+Input is being processed as unpaired
+Started output streams:	0.023 seconds.
+Processing time:   		204.199 seconds.
+
+Input:                  	32843926 reads 		4926588900 bases.
+QTrimmed:               	4960721 reads (15.10%) 	195092693 bases (3.96%)
+KTrimmed:               	1231088 reads (3.75%) 	39101966 bases (0.79%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	580124 reads (1.77%) 	234194659 bases (4.75%)
+Result:                 	32263802 reads (98.23%) 	4692394241 bases (95.25%)
+
+Time:                         	204.331 seconds.
+Reads Processed:      32843k 	160.74k reads/sec
+Bases Processed:       4926m 	24.11m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//W11-LCL9041_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//W11-LCL9041_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//W11-LCL9041_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//W11-LCL9041_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.039 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.130 seconds.
+Memory: max=14218m, total=14218m, free=14147m, used=71m
+
+Input is being processed as unpaired
+Started output streams:	0.028 seconds.
+Processing time:   		208.253 seconds.
+
+Input:                  	32843926 reads 		4926588900 bases.
+QTrimmed:               	4491422 reads (13.68%) 	142269489 bases (2.89%)
+KTrimmed:               	1243166 reads (3.79%) 	41355413 bases (0.84%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	381365 reads (1.16%) 	183624902 bases (3.73%)
+Result:                 	32462561 reads (98.84%) 	4742963998 bases (96.27%)
+
+Time:                         	208.416 seconds.
+Reads Processed:      32843k 	157.59k reads/sec
+Bases Processed:       4926m 	23.64m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//W12-LCL9042_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//W12-LCL9042_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//W12-LCL9042_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//W12-LCL9042_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.039 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.119 seconds.
+Memory: max=14218m, total=14218m, free=14143m, used=75m
+
+Input is being processed as unpaired
+Started output streams:	0.028 seconds.
+Processing time:   		202.752 seconds.
+
+Input:                  	32619404 reads 		4892910600 bases.
+QTrimmed:               	4746247 reads (14.55%) 	192473485 bases (3.93%)
+KTrimmed:               	1221470 reads (3.74%) 	38585389 bases (0.79%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	578154 reads (1.77%) 	231058874 bases (4.72%)
+Result:                 	32041250 reads (98.23%) 	4661851726 bases (95.28%)
+
+Time:                         	202.904 seconds.
+Reads Processed:      32619k 	160.76k reads/sec
+Bases Processed:       4892m 	24.11m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//W12-LCL9042_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//W12-LCL9042_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//W12-LCL9042_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//W12-LCL9042_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.039 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.099 seconds.
+Memory: max=14218m, total=14218m, free=14143m, used=75m
+
+Input is being processed as unpaired
+Started output streams:	0.024 seconds.
+Processing time:   		206.230 seconds.
+
+Input:                  	32619404 reads 		4892910600 bases.
+QTrimmed:               	4314740 reads (13.23%) 	137315113 bases (2.81%)
+KTrimmed:               	1231046 reads (3.77%) 	40674925 bases (0.83%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	370735 reads (1.14%) 	177990038 bases (3.64%)
+Result:                 	32248669 reads (98.86%) 	4714920562 bases (96.36%)
+
+Time:                         	206.358 seconds.
+Reads Processed:      32619k 	158.07k reads/sec
+Bases Processed:       4892m 	23.71m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//W16-LCL9043_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//W16-LCL9043_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//W16-LCL9043_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//W16-LCL9043_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.045 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.126 seconds.
+Memory: max=14218m, total=14218m, free=14151m, used=67m
+
+Input is being processed as unpaired
+Started output streams:	0.027 seconds.
+Processing time:   		209.711 seconds.
+
+Input:                  	33388346 reads 		5008251900 bases.
+QTrimmed:               	4765964 reads (14.27%) 	193769219 bases (3.87%)
+KTrimmed:               	1175777 reads (3.52%) 	37617653 bases (0.75%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	580404 reads (1.74%) 	231386872 bases (4.62%)
+Result:                 	32807942 reads (98.26%) 	4776865028 bases (95.38%)
+
+Time:                         	209.870 seconds.
+Reads Processed:      33388k 	159.09k reads/sec
+Bases Processed:       5008m 	23.86m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//W16-LCL9043_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//W16-LCL9043_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//W16-LCL9043_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//W16-LCL9043_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.037 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.107 seconds.
+Memory: max=14218m, total=14218m, free=14147m, used=71m
+
+Input is being processed as unpaired
+Started output streams:	0.023 seconds.
+Processing time:   		213.401 seconds.
+
+Input:                  	33388346 reads 		5008251900 bases.
+QTrimmed:               	5078606 reads (15.21%) 	159388287 bases (3.18%)
+KTrimmed:               	1186339 reads (3.55%) 	39800701 bases (0.79%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	424408 reads (1.27%) 	199188988 bases (3.98%)
+Result:                 	32963938 reads (98.73%) 	4809062912 bases (96.02%)
+
+Time:                         	213.536 seconds.
+Reads Processed:      33388k 	156.36k reads/sec
+Bases Processed:       5008m 	23.45m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//W17-LCL9044_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//W17-LCL9044_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//W17-LCL9044_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//W17-LCL9044_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.037 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.112 seconds.
+Memory: max=14218m, total=14218m, free=14147m, used=71m
+
+Input is being processed as unpaired
+Started output streams:	0.029 seconds.
+Processing time:   		215.739 seconds.
+
+Input:                  	34418419 reads 		5162762850 bases.
+QTrimmed:               	5216568 reads (15.16%) 	203093459 bases (3.93%)
+KTrimmed:               	1209974 reads (3.52%) 	37863622 bases (0.73%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	595167 reads (1.73%) 	240957081 bases (4.67%)
+Result:                 	33823252 reads (98.27%) 	4921805769 bases (95.33%)
+
+Time:                         	215.885 seconds.
+Reads Processed:      34418k 	159.43k reads/sec
+Bases Processed:       5162m 	23.91m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//W17-LCL9044_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//W17-LCL9044_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//W17-LCL9044_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//W17-LCL9044_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.041 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.116 seconds.
+Memory: max=14218m, total=14218m, free=14151m, used=67m
+
+Input is being processed as unpaired
+Started output streams:	0.024 seconds.
+Processing time:   		219.948 seconds.
+
+Input:                  	34418419 reads 		5162762850 bases.
+QTrimmed:               	4752982 reads (13.81%) 	147688600 bases (2.86%)
+KTrimmed:               	1230349 reads (3.57%) 	40525342 bases (0.78%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	389963 reads (1.13%) 	188213942 bases (3.65%)
+Result:                 	34028456 reads (98.87%) 	4974548908 bases (96.35%)
+
+Time:                         	220.093 seconds.
+Reads Processed:      34418k 	156.38k reads/sec
+Bases Processed:       5162m 	23.46m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//W18-LCL9045_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//W18-LCL9045_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//W18-LCL9045_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//W18-LCL9045_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.040 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.118 seconds.
+Memory: max=14218m, total=14218m, free=14147m, used=71m
+
+Input is being processed as unpaired
+Started output streams:	0.024 seconds.
+Processing time:   		216.242 seconds.
+
+Input:                  	34899506 reads 		5234925900 bases.
+QTrimmed:               	5035831 reads (14.43%) 	204154985 bases (3.90%)
+KTrimmed:               	1096733 reads (3.14%) 	33943620 bases (0.65%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	608304 reads (1.74%) 	238098605 bases (4.55%)
+Result:                 	34291202 reads (98.26%) 	4996827295 bases (95.45%)
+
+Time:                         	216.389 seconds.
+Reads Processed:      34899k 	161.28k reads/sec
+Bases Processed:       5234m 	24.19m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//W18-LCL9045_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//W18-LCL9045_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//W18-LCL9045_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//W18-LCL9045_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.036 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.105 seconds.
+Memory: max=14218m, total=14218m, free=14143m, used=75m
+
+Input is being processed as unpaired
+Started output streams:	0.023 seconds.
+Processing time:   		222.714 seconds.
+
+Input:                  	34899506 reads 		5234925900 bases.
+QTrimmed:               	5198350 reads (14.90%) 	160860038 bases (3.07%)
+KTrimmed:               	1105124 reads (3.17%) 	35821468 bases (0.68%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	424202 reads (1.22%) 	196681506 bases (3.76%)
+Result:                 	34475304 reads (98.78%) 	5038244394 bases (96.24%)
+
+Time:                         	222.847 seconds.
+Reads Processed:      34899k 	156.61k reads/sec
+Bases Processed:       5234m 	23.49m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//W19-LCL9046_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//W19-LCL9046_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//W19-LCL9046_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//W19-LCL9046_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.057 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.117 seconds.
+Memory: max=14218m, total=14218m, free=14143m, used=75m
+
+Input is being processed as unpaired
+Started output streams:	0.028 seconds.
+Processing time:   		204.276 seconds.
+
+Input:                  	32821190 reads 		4923178500 bases.
+QTrimmed:               	4584466 reads (13.97%) 	176243538 bases (3.58%)
+KTrimmed:               	1379095 reads (4.20%) 	44076265 bases (0.90%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	515755 reads (1.57%) 	220319803 bases (4.48%)
+Result:                 	32305435 reads (98.43%) 	4702858697 bases (95.52%)
+
+Time:                         	204.430 seconds.
+Reads Processed:      32821k 	160.55k reads/sec
+Bases Processed:       4923m 	24.08m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//W19-LCL9046_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//W19-LCL9046_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//W19-LCL9046_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//W19-LCL9046_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.035 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.107 seconds.
+Memory: max=14218m, total=14218m, free=14151m, used=67m
+
+Input is being processed as unpaired
+Started output streams:	0.027 seconds.
+Processing time:   		211.218 seconds.
+
+Input:                  	32821190 reads 		4923178500 bases.
+QTrimmed:               	4897050 reads (14.92%) 	144621886 bases (2.94%)
+KTrimmed:               	1387538 reads (4.23%) 	46395765 bases (0.94%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	373502 reads (1.14%) 	191017651 bases (3.88%)
+Result:                 	32447688 reads (98.86%) 	4732160849 bases (96.12%)
+
+Time:                         	211.360 seconds.
+Reads Processed:      32821k 	155.29k reads/sec
+Bases Processed:       4923m 	23.29m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//W1-LCL9034_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//W1-LCL9034_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//W1-LCL9034_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//W1-LCL9034_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.041 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.127 seconds.
+Memory: max=14218m, total=14218m, free=14147m, used=71m
+
+Input is being processed as unpaired
+Started output streams:	0.023 seconds.
+Processing time:   		191.225 seconds.
+
+Input:                  	30838415 reads 		4625762250 bases.
+QTrimmed:               	4565276 reads (14.80%) 	185918399 bases (4.02%)
+KTrimmed:               	1156225 reads (3.75%) 	37579179 bases (0.81%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	558850 reads (1.81%) 	223497578 bases (4.83%)
+Result:                 	30279565 reads (98.19%) 	4402264672 bases (95.17%)
+
+Time:                         	191.380 seconds.
+Reads Processed:      30838k 	161.14k reads/sec
+Bases Processed:       4625m 	24.17m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//W1-LCL9034_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//W1-LCL9034_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//W1-LCL9034_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//W1-LCL9034_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.041 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.114 seconds.
+Memory: max=14218m, total=14218m, free=14143m, used=75m
+
+Input is being processed as unpaired
+Started output streams:	0.026 seconds.
+Processing time:   		195.320 seconds.
+
+Input:                  	30838415 reads 		4625762250 bases.
+QTrimmed:               	3950758 reads (12.81%) 	126547294 bases (2.74%)
+KTrimmed:               	1167458 reads (3.79%) 	39682216 bases (0.86%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	344154 reads (1.12%) 	166229510 bases (3.59%)
+Result:                 	30494261 reads (98.88%) 	4459532740 bases (96.41%)
+
+Time:                         	195.465 seconds.
+Reads Processed:      30838k 	157.77k reads/sec
+Bases Processed:       4625m 	23.67m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//W20-LCL9047_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//W20-LCL9047_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//W20-LCL9047_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//W20-LCL9047_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.039 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.105 seconds.
+Memory: max=14218m, total=14218m, free=14143m, used=75m
+
+Input is being processed as unpaired
+Started output streams:	0.025 seconds.
+Processing time:   		209.316 seconds.
+
+Input:                  	33615420 reads 		5042313000 bases.
+QTrimmed:               	4886946 reads (14.54%) 	200779442 bases (3.98%)
+KTrimmed:               	1351891 reads (4.02%) 	43670658 bases (0.87%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	607436 reads (1.81%) 	244450100 bases (4.85%)
+Result:                 	33007984 reads (98.19%) 	4797862900 bases (95.15%)
+
+Time:                         	209.451 seconds.
+Reads Processed:      33615k 	160.49k reads/sec
+Bases Processed:       5042m 	24.07m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//W20-LCL9047_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//W20-LCL9047_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//W20-LCL9047_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//W20-LCL9047_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.046 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.120 seconds.
+Memory: max=14218m, total=14218m, free=14143m, used=75m
+
+Input is being processed as unpaired
+Started output streams:	0.031 seconds.
+Processing time:   		211.951 seconds.
+
+Input:                  	33615420 reads 		5042313000 bases.
+QTrimmed:               	4420429 reads (13.15%) 	140130347 bases (2.78%)
+KTrimmed:               	1362849 reads (4.05%) 	45970342 bases (0.91%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	377253 reads (1.12%) 	186100689 bases (3.69%)
+Result:                 	33238167 reads (98.88%) 	4856212311 bases (96.31%)
+
+Time:                         	212.107 seconds.
+Reads Processed:      33615k 	158.48k reads/sec
+Bases Processed:       5042m 	23.77m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//W2-LCL9035_L1_R1_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//W2-LCL9035_L1_R1_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//W2-LCL9035_L1_R1_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//W2-LCL9035_L1_R1_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.041 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.128 seconds.
+Memory: max=14218m, total=14218m, free=14147m, used=71m
+
+Input is being processed as unpaired
+Started output streams:	0.023 seconds.
+Processing time:   		201.425 seconds.
+
+Input:                  	32313343 reads 		4847001450 bases.
+QTrimmed:               	4741853 reads (14.67%) 	190983449 bases (3.94%)
+KTrimmed:               	890344 reads (2.76%) 	27933892 bases (0.58%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	566223 reads (1.75%) 	218917341 bases (4.52%)
+Result:                 	31747120 reads (98.25%) 	4628084109 bases (95.48%)
+
+Time:                         	201.582 seconds.
+Reads Processed:      32313k 	160.30k reads/sec
+Bases Processed:       4847m 	24.04m bases/sec
+java -ea -Xmx13557m -Xms13557m -cp /isg/shared/apps/bbmap/39.08/current/ jgi.BBDuk in=/scratch/lmarla/rna_seq_data/raw_data//W2-LCL9035_L1_R2_001.fastq out=/scratch/lmarla/rna_seq_data/cleaned_reads//W2-LCL9035_L1_R2_001.fastq_trimmed.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=20 minlen=50
+Executing jgi.BBDuk [in=/scratch/lmarla/rna_seq_data/raw_data//W2-LCL9035_L1_R2_001.fastq, out=/scratch/lmarla/rna_seq_data/cleaned_reads//W2-LCL9035_L1_R2_001.fastq_trimmed.fastq.gz, ref=adapters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, qtrim=r, trimq=20, minlen=50]
+Version 39.08
+
+maskMiddle was disabled because useShortKmers=true
+0.040 seconds.
+Initial:
+Memory: max=14218m, total=14218m, free=14177m, used=41m
+
+Added 217135 kmers; time: 	0.114 seconds.
+Memory: max=14218m, total=14218m, free=14143m, used=75m
+
+Input is being processed as unpaired
+Started output streams:	0.022 seconds.

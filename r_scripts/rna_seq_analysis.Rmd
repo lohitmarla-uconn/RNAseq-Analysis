@@ -6,193 +6,164 @@ output:
   pdf_document: default
 ---
 
-```{r}
-# Load necessary libraries
+```{r,  warning=FALSE, message=FALSE}
+
+# 📌 Load Required Libraries
 library(DESeq2)
 library(ggplot2)
 library(dplyr)
+library(clusterProfiler)
+library(org.Mm.eg.db)  # Annotation database for mouse
+library(ReactomePA)
+library(EnhancedVolcano)
+library(pheatmap)
+
 ```
-
-```{r}
-# Load gene expression data
+```{r,  warning=FALSE, message=FALSE}
+# 📌 Load and Prepare Data
 counts_df <- read.csv("C:/Users/lohit marla/Documents/RNAseq-Analysis/data/rna_seq_counts_matrix.csv", row.names = 1)
-
-# Load metadata
 metadata_df <- read.csv("C:/Users/lohit marla/Documents/RNAseq-Analysis/conf/metadata.csv", row.names = 1)
 
-# Ensure 'type' column in metadata is a factor
-metadata_df$type <- as.factor(metadata_df$type)
+metadata_df$type <- as.factor(metadata_df$type)  # Ensure sample type is a factor
 
-# Function to filter out unwanted genes
+# Function to filter out unwanted genes (e.g., non-coding genes)
 is_unwanted_gene <- function(gene_name) {
-  if (grepl("^(GM|gm|Gm|IG|ig|Ig)", gene_name)) {
-    return(TRUE)
-  }
-  if (tolower(gene_name) %>% endsWith("rik")) {
-    return(TRUE)
-  }
+  if (grepl("^(GM|gm|Gm|IG|ig|Ig)", gene_name) || tolower(gene_name) %>% endsWith("rik")) return(TRUE)
   return(FALSE)
 }
 
-# Apply the function to filter out unwanted genes
+# Filter unwanted genes
 filtered_counts_df <- counts_df[!sapply(rownames(counts_df), is_unwanted_gene), ]
 
-
-# Ensure that the sample names match
+# Match sample names
 common_samples <- intersect(colnames(filtered_counts_df), rownames(metadata_df))
 filtered_counts_df <- filtered_counts_df[, common_samples]
 metadata_df <- metadata_df[common_samples, ]
-```
 
-```{R}
-# Create DESeq2 dataset
+```
+```{r,  warning=FALSE, message=FALSE}
+# 📌 Differential Expression Analysis using DESeq2
 dds <- DESeqDataSetFromMatrix(countData = filtered_counts_df, colData = metadata_df, design = ~ type)
-
-# Run DESeq2 analysis
 dds <- DESeq(dds)
-dds
-```
-
-```{r}
-# Get results
 res <- results(dds)
-res
-```
 
-```{r}
-# Filter significant genes
-alpha <- 0.05
-log2_fc_threshold <- 1.0
+# 📌 Identify Significant Differentially Expressed Genes (DEGs)
+alpha <- 0.05  # Adjusted p-value threshold
+log2_fc_threshold <- 1.0  # Fold change threshold
+
 significant_genes_df <- res %>%
   as.data.frame() %>%
   filter(padj < alpha & abs(log2FoldChange) >= log2_fc_threshold)
-significant_genes_df
 
 ```
-
-```{r}
-  ggplot(res, aes(x = log2FoldChange, y = -log10(padj))) +
+```{r,  warning=FALSE, message=FALSE}
+# 📌 Volcano Plot for Differential Expression
+ggplot(res, aes(x = log2FoldChange, y = -log10(padj))) +
   geom_point(aes(color = rownames(res) %in% rownames(significant_genes_df)), alpha = 0.5) +
   scale_color_manual(values = c("TRUE" = "red", "FALSE" = "blue")) +
   geom_hline(yintercept = -log10(alpha), linetype = "dashed", color = "grey") +
   geom_vline(xintercept = c(-log2_fc_threshold, log2_fc_threshold), linetype = "dashed", color = "grey") +
   labs(title = "Volcano Plot of Differential Expression", x = "Log2 Fold Change", y = "-Log10 Adjusted P-Value") +
   theme_minimal()
-```
-
-```{R}
-
-alpha <- 0.05
-log2_fc_threshold <- 1.0
-significant_genes_df <- res %>%
-  as.data.frame() %>%
-  filter(padj < alpha & abs(log2FoldChange) >= log2_fc_threshold)
-
-significant_genes_df
 
 ```
-
-```{r}
-library(ggplot2)
-library(EnhancedVolcano)
-
+```{r,  warning=FALSE, message=FALSE}
+# 📌 Enhanced Volcano Plot
 EnhancedVolcano(res,
                 lab = rownames(res),
                 x = 'log2FoldChange',
                 y = 'pvalue',
                 title = 'Volcano Plot of Differentially Expressed Genes',
-                pCutoff = 0.05,
-                FCcutoff = 1.0,
+                pCutoff = alpha,
+                FCcutoff = log2_fc_threshold,
                 pointSize = 3.0,
                 labSize = 3.0)
 
-
 ```
+```{r,  warning=FALSE, message=FALSE}
 
-```{r}
-library(pheatmap)
-
-# Select top 50 significant genes
+# 📌 Heatmap of Top 50 Significant Genes
 top50 <- rownames(significant_genes_df[order(significant_genes_df$padj), ])[1:50]
-
-# Extract normalized counts for heatmap
 normalized_counts <- counts(dds, normalized=TRUE)
 heatmap_data <- normalized_counts[top50,]
 
-# Plot Heatmap
-pheatmap(heatmap_data, scale="row", clustering_distance_rows="correlation", clustering_distance_cols="correlation")
+pheatmap(heatmap_data, scale="row", clustering_distance_rows="correlation", clustering_distance_cols="correlation", fontsize_row = 4)
 
 ```
+```{r,  warning=FALSE, message=FALSE}
 
-```{r}
-library(clusterProfiler)
-library(org.Mm.eg.db)  # Use "org.Hs.eg.db" for human
-
-
-deg_genes <- rownames(significant_genes_df)
-gene_ids <- bitr(deg_genes, fromType="SYMBOL", toType="ENTREZID", OrgDb=org.Mm.eg.db)
-
-# Perform GO Enrichment Analysis
+# 📌 GO Enrichment Analysis for Mouse
+gene_ids <- bitr(rownames(significant_genes_df), fromType="SYMBOL", toType="ENTREZID", OrgDb=org.Mm.eg.db)
 go_results <- enrichGO(gene=gene_ids$ENTREZID, OrgDb=org.Mm.eg.db, ont="BP", pAdjustMethod="BH")
-go_results
-
-# Save GO Results
-#write.csv(go_results, "GO_enrichment_results.csv")
+write.csv(go_results@result, "GO_enrichment_results_mouse.csv")
 
 ```
-
-```{r}
-# Run KEGG Pathway Analysis
-kegg_results <- enrichKEGG(gene=gene_ids$ENTREZID, organism="mmu")  # Use "hsa" for human
-kegg_results
-# Save KEGG Results
-#write.csv(kegg_results, "KEGG_enrichment_results.csv")
+```{r,  warning=FALSE, message=FALSE}
+# 📌 KEGG Pathway Enrichment Analysis (Mouse)
+kegg_results <- enrichKEGG(gene=gene_ids$ENTREZID, organism="mmu")
+write.csv(kegg_results@result, "KEGG_enrichment_results_mouse.csv")
 
 ```
+```{r,  warning=FALSE, message=FALSE}
+# 📌 Reactome Pathway Enrichment Analysis (Mouse)
+reactome_results <- enrichPathway(gene=gene_ids$ENTREZID, organism="mouse")
+write.csv(reactome_results@result, "Reactome_enrichment_results_mouse.csv")
 
-```{r}
+# 📌 Plot GO Enrichment with Smaller Font
+dotplot(go_results, showCategory=10, title="GO Biological Process Enrichment") +
+  theme(
+    axis.text.x = element_text(size = 8),  # Reduce x-axis font size
+    axis.text.y = element_text(size = 8),  # Reduce y-axis font size
+    plot.title = element_text(size = 10),  # Reduce title size
+    legend.text = element_text(size = 8),  # Reduce legend font size
+    legend.title = element_text(size = 9)  # Reduce legend title size
+  )
+
+```
+```{r,  warning=FALSE, message=FALSE}
+# 📌 Plot KEGG Pathway Enrichment with Smaller Font
+dotplot(kegg_results, showCategory=10, title="KEGG Pathway Enrichment - Mouse") +
+  theme(
+    axis.text.x = element_text(size = 8),
+    axis.text.y = element_text(size = 8),
+    plot.title = element_text(size = 10),
+    legend.text = element_text(size = 8),
+    legend.title = element_text(size = 9)
+  )
+
+```
+```{r,  warning=FALSE, message=FALSE}
+# 📌 Plot Reactome Pathway Enrichment with Smaller Font
+dotplot(reactome_results, showCategory=10, title="Reactome Pathway Enrichment - Mouse") +
+  theme(
+    axis.text.x = element_text(size = 8),
+    axis.text.y = element_text(size = 8),
+    plot.title = element_text(size = 10),
+    legend.text = element_text(size = 8),
+    legend.title = element_text(size = 9)
+  )
+
+```
+```{r,  warning=FALSE, message=FALSE}
+# 📌 Identify Cancer-Related DEGs
 cancer_genes <- c("Tp53", "Myc", "Akt1", "Pten", "Cdkn2a", "Rb1")  # Add relevant genes
-
 cancer_degs <- significant_genes_df[rownames(significant_genes_df) %in% cancer_genes, ]
-cancer_degs
-
-#write.csv(cancer_degs, "cancer_related_DEGs.csv")
+write.csv(cancer_degs, "cancer_related_DEGs_mouse.csv")
 
 ```
+```{r,  warning=FALSE, message=FALSE}
+# 📌 Extract top 10 significant GO terms based on adjusted p-value
+top_go_terms <- go_results@result[order(go_results@result$p.adjust), ][1:10, ]
 
-```{r}
-# Get significant KEGG pathways
-# Get significant KEGG pathways
-significant_kegg <- subset(kegg_results@result, p.adjust < 0.05)
-
-# Check if "p53 signaling pathway" or "cell cycle" is affected
-print(significant_kegg)
-
-```
-}
-
-```{r}
-# Ensure p.adjust is numeric
-go_results@result$p.adjust <- as.numeric(go_results@result$p.adjust)
-
-# Get significant GO terms
-significant_go <- subset(go_results@result, p.adjust < 0.05)
-
-# Print significant GO terms
-print(significant_go)
-
-library(ggplot2)
-
-# Select top 10 enriched pathways
-top_go <- significant_go[1:10, ]
-
-ggplot(top_go, aes(x=reorder(Description, -log10(p.adjust)), y=-log10(p.adjust))) +
+# 📌 Visualize GO Enrichment Bar Plot
+ggplot(top_go_terms, aes(x=reorder(Description, -log10(p.adjust)), y=-log10(p.adjust))) +
   geom_bar(stat="identity", fill="blue") +
   coord_flip() +
   labs(title="Top 10 Enriched GO Terms", x="GO Term", y="-Log10 Adjusted P-Value") +
   theme_minimal()
 
-dotplot(go_results, showCategory=10, title="GO Biological Process Enrichment")
+# ✅ End of Analysis
+print("🚀 Mouse RNA-Seq Analysis Complete!")
 
 
 ```

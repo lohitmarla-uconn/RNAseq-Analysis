@@ -12,7 +12,8 @@
 module load MultiQC/1.12  # Load MultiQC module (if available)
 
 # Define directories
-FASTQC_DIR="/scratch/lmarla/rna_seq_data/fastqc_reports/"
+#mv /scratch/lmarla/rna_seq_data/fastqc_reports/*fastq_trimmed_fastqc* /scratch/lmarla/rna_seq_data/trimmed_fastq
+FASTQC_DIR="/scratch/lmarla/rna_seq_data/trimmed_fastq/"
 MULTIQC_OUTPUT="/scratch/lmarla/rna_seq_data/multiqc_reports"
 
 # Create output directory if not exists

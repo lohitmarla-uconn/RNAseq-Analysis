@@ -80,6 +80,26 @@ EnhancedVolcano(res,
                 labSize = 3.0)
 
 ```
+
+```{r}
+# 📌 Perform Variance-Stabilizing Transformation (VST)
+vsd <- vst(dds, blind = FALSE)  # Transform DESeq2 data to stabilize variance
+
+# 📌 Extract PCA Data
+pca_data <- plotPCA(vsd, intgroup = "type", returnData = TRUE)
+
+# Compute % variance explained by each principal component (PC)
+percentVar <- round(100 * attr(pca_data, "percentVar"))
+
+# 📌 Generate PCA Plot
+ggplot(pca_data, aes(PC1, PC2, color=type)) +
+    geom_point(size=4, alpha=0.8) +
+    labs(title = "PCA Plot of RNA-Seq Samples",
+         x = paste0("PC1: ", percentVar[1], "% variance"),
+         y = paste0("PC2: ", percentVar[2], "% variance")) +
+    theme_minimal() +
+    theme(text = element_text(size=14))
+```
 ```{r,  warning=FALSE, message=FALSE}
 
 # 📌 Heatmap of Top 50 Significant Genes

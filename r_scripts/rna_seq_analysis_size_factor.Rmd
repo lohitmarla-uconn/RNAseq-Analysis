@@ -1,0 +1,90 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r}
+
+
+library(DESeq2)
+library(ggplot2)
+library(dplyr)
+library(clusterProfiler)
+library(org.Mm.eg.db)  # Annotation database for mouse
+library(ReactomePA)
+library(EnhancedVolcano)
+library(pheatmap)
+
+# 📌 Load and Prepare Data
+counts_df <- read.csv("C:/Users/lohit marla/Documents/RNAseq-Analysis/data/rna_seq_counts_matrix.csv", row.names = 1)
+metadata_df <- read.csv("C:/Users/lohit marla/Documents/RNAseq-Analysis/conf/metadata.csv", row.names = 1)
+
+# Ensure 'type' and 'size' are factors with appropriate reference levels
+metadata_df$type <- factor(metadata_df$type, levels = c("WT", "KO"))
+metadata_df$size <- factor(metadata_df$size, levels = c("small", "large"))
+
+# Function to filter out unwanted genes (e.g., non-coding genes)
+is_unwanted_gene <- function(gene_name) {
+  grepl("^(GM|gm|Gm|IG|ig|Ig)", gene_name) || tolower(gene_name) %>% endsWith("rik")
+}
+
+# Filter unwanted genes
+filtered_counts_df <- counts_df[!sapply(rownames(counts_df), is_unwanted_gene), ]
+
+# Match sample names between counts and metadata
+common_samples <- intersect(colnames(filtered_counts_df), rownames(metadata_df))
+filtered_counts_df <- filtered_counts_df[, common_samples]
+metadata_df <- metadata_df[common_samples, ]
+
+# 📌 Create DESeq2 Dataset with Interaction Term
+dds <- DESeqDataSetFromMatrix(countData = filtered_counts_df, colData = metadata_df, design = ~ type + size + type:size)
+dds <- DESeq(dds)
+
+# 📌 Extract Results for Interaction Effect
+res_interaction <- results(dds, name = "type_KO_vs_WT.size_large_vs_small")
+
+# 📌 Principal Component Analysis (PCA) Plot
+vsd <- vst(dds, blind = FALSE)
+pcaData <- plotPCA(vsd, intgroup = c("type", "size"), returnData = TRUE)
+percentVar <- round(100 * attr(pcaData, "percentVar"))
+ggplot(pcaData, aes(PC1, PC2, color = type, shape = size)) +
+  geom_point(size = 4, alpha = 0.8) +
+  labs(title = "PCA Plot of RNA-Seq Samples",
+       x = paste0("PC1: ", percentVar[1], "% variance"),
+       y = paste0("PC2: ", percentVar[2], "% variance")) +
+  theme_minimal() +
+  theme(text = element_text(size = 14))
+
+# 📌 Heatmap of Top 50 Differentially Expressed Genes Based on Interaction Effect
+topGenes <- head(order(res_interaction$padj), 50)
+mat <- assay(vsd)[topGenes, ]
+mat <- mat - rowMeans(mat)
+pheatmap(mat, annotation_col = metadata_df)
+
+# 📌 Volcano Plot for Interaction Effect
+EnhancedVolcano(res_interaction,
+                lab = rownames(res_interaction),
+                x = 'log2FoldChange',
+                y = 'pvalue',
+                title = 'Volcano Plot for Interaction Effect',
+                pCutoff = 0.05,
+                FCcutoff = 1.0,
+                pointSize = 2.0,
+                labSize = 3.0)
+
+# 📌 Functional Enrichment Analysis for Significant Genes in Interaction Effect
+# Extract significant genes
+sig_genes <- rownames(subset(res_interaction, padj < 0.05))
+entrez_ids <- mapIds(org.Mm.eg.db, keys = sig_genes, column = "ENTREZID", keytype = "SYMBOL", multiVals = "first")
+
+# KEGG Pathway Enrichment
+kegg_results <- enrichKEGG(gene = entrez_ids, organism = 'mmu', pvalueCutoff = 0.05)
+dotplot(kegg_results, showCategory = 10, title = "KEGG Pathway Enrichment")
+
+# GO Enrichment
+go_results <- enrichGO(gene = entrez_ids, OrgDb = org.Mm.eg.db, ont = "BP", pvalueCutoff = 0.05)
+dotplot(go_results, showCategory = 10, title = "GO Biological Process Enrichment")
+
+```

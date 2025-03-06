@@ -1,0 +1,145 @@
+1. Git-Related Commands
+These commands involve Git version control, including adding, committing, pushing, pulling, and managing SSH keys.
+
+bash
+Copy
+Edit
+889  git add .
+890  cd rna_seq_analysis/
+891  git add .
+892  git status
+893  git commit -m "added slurm scripts for the trimmomatic, fastqc, multiqc"
+894  git push
+895  git pull
+896  ls -al ~/.ssh
+897  eval "$(ssh-agent -s)"   # Start SSH agent
+898  ssh-add ~/.ssh/id_rsa     # Add SSH key
+899  ssh-add ~/.ssh/github_sssh_key     # Add SSH key
+900  ssh -T git@github.com
+901  git pull
+902  git push
+903  git fetch
+904  git pull
+2. SLURM Job Management
+Commands related to submitting, monitoring, and managing SLURM jobs.
+
+bash
+Copy
+Edit
+50  nano genom_index_mapping_feature_acounts_pipeline.slurm
+51  sbatch genom_index_mapping_feature_acounts_pipeline.slurm
+52  squeue 8925335
+53  squeue -u $USER
+107  sbatch star_alignment.slurm
+108  squeue -u $USER
+109  squeue --states=PENDING
+110  sinfo
+111  scontrol show job 8925539
+113  sbatch star_alignment.slurm
+114  squeue --states=PENDING
+115  squeue -u $USER
+121  scancel 8925539
+127  sacct --user=$USER --format=JobID,JobName,Partition,State,ExitCode -X --starttime=2025-02-28
+128  sbatch star_alignment.slurm
+129  squeue -u $USER
+130  sacct --user=$USER --format=JobID,JobName,Partition,State,ExitCode -X --starttime=2025-02-28
+442  sbatch qc_featurecounts_pipeline.slurm
+450  cat /scratch/lmarla/rna_seq_data/logs/STAR_FeatureCounts_8927340.log
+453  sbatch qc_featurecounts_pipeline.slurm
+478  cd /home/FCAM/lmarla/rna_seq_analysis/slurm_jobs/
+480  nano star_alignment.slurm
+482  cd  /scratch/lmarla/rna_seq_data/feature_counts/
+485  squeue -u $USER
+514  cat /scratch/lmarla/rna_seq_data/logs/STAR_K16_8927420.log
+523  sbatch star_k16_alignment.slurm
+524  squeue -u $USER
+614  sbatch star_k16_alignment.slurm
+615  scancel 8927752
+630  sbatch run_qc_featurecounts.slurm
+741  sbatch featurecounts_all.slurm
+774  sbatch featurecounts_all.slurm
+931  sbatch raw_data_fastqc_multiqc_pipeline.slurm
+970  nano run_qc_featurecounts.slurm
+3. File and Directory Navigation
+Commands for changing directories, listing contents, and inspecting file structure.
+
+bash
+Copy
+Edit
+3  cd rna_seq_analysis/slurm_jobs/
+5  cd  /scratch/lmarla/rna_seq_data/
+7  cd genome_index/
+13  pwd
+14  cd rna_seq_analysis/slurm_jobs/
+16  pwd
+22  cd /scratch/lmarla/rna_seq_data/feature_counts/
+28  cd /scratch/lmarla/rna_seq_data/alignment_qc/
+39  cd /scratch/lmarla/rna_seq_data/
+41  cd quality_trimmed_reads
+43  cd ..
+45  cd quality_trimmed_reads_trimmomatic
+47  cd /home/FCAM/lmarla/rna_seq_analysis/slurm_jobs/
+55  cd /scratch/lmarla/rna_seq_data/
+68  cd /scratch/lmarla/rna_seq_data/quality_trimmed_reads
+146  cd dedup_reads/
+168  cd /home/FCAM/lmarla/rna_seq_analysis/slurm_jobs/
+209  cd /scratch/lmarla/rna_seq_data/aligned_reads/
+242  cd  /scratch/lmarla/rna_seq_data/
+258  cd quality_trimmed_reads_trimmomatic_min_len/
+272  cd /home/FCAM/lmarla/rna_seq_analysis/slurm_jobs/
+301  pwd
+303  rm star_alignment_k_10_min_len.slurm
+620  cd aligned_reads
+703  cd /scratch/lmarla/rna_seq_data/
+705  cd alignment_qc_all/
+764  cd ..
+775  cd /home/FCAM/lmarla/rna_seq_analysis/slurm_jobs/
+906  cd /scratch/lmarla/rna_seq_data/
+909  ls -lt
+920  cd /home/FCAM/lmarla/rna_seq_analysis/slurm_jobs/
+926  cd raw_data/
+946  squeue -u $USER
+965  cat K12-LCL9056_L1_idxstats.txt
+967  cd /home/FCAM/lmarla/rna_seq_analysis/slurm_jobs/
+4. File Manipulation and Processing
+Commands for viewing, editing, deleting, and transforming files.
+
+bash
+Copy
+Edit
+9  cat chrLength.txt
+10  ls -lh /scratch/lmarla/rna_seq_data/feature_counts/
+11  head /scratch/lmarla/rna_seq_data/feature_counts/gene_counts.txt
+12  wc -l /scratch/lmarla/rna_seq_data/feature_counts/gene_counts.txt
+20  cat Log.out
+21  cd /scratch/lmarla/rna_seq_data/feature_counts/gene_counts.txt
+23  dir
+32  zcat /scratch/lmarla/rna_seq_data/final_trimmed_reads_trimmomatic_min_len/K10-LCL9055_L1_R2_final.fastq.gz | wc -l
+37  samtools view /scratch/lmarla/rna_seq_data/aligned_reads/K10-LCL9055_L1_Aligned.sortedByCoord.out.bam | head
+46  ls -lh
+66  zcat /scratch/lmarla/rna_seq_data/final_trimmed_reads_trimmomatic_min_len/K10-LCL9055_L1_R1_final.fastq.gz | awk '(NR%4==2){print length($1)}' | sort -n | uniq -c
+69  samtools flagstat /scratch/lmarla/rna_seq_data/aligned_reads/K10-LCL9055_L1_Aligned.sortedByCoord.out.bam
+70  samtools view /scratch/lmarla/rna_seq_data/aligned_reads/K10-LCL9055_L1_Aligned.sortedByCoord.out.bam | head
+227  cat /scratch/lmarla/rna_seq_data/aligned_reads/W10-LCL9040_L1_Aligned.sortedByCoord.out.bam
+371  rm *--*
+497  find . -maxdepth 1 -type f ! -name "*.slurm" -delete
+798  head /scratch/lmarla/rna_seq_data/feature_counts_all/gene_counts.txt
+882  awk 'BEGIN{FS=OFS="\t"} {gsub(/\t/, ",")}1' gene_counts_k16.txt > gene_counts_k16.csv
+5. Data Analysis and Processing
+Commands for statistical processing, QC, and visualization.
+
+bash
+Copy
+Edit
+410  module multiqc
+411  module load Multiqc
+413  module load  MultiQC/1.10.1
+414  multiqc /scratch/lmarla/rna_seq_data/alignment_qc/
+459  which samtools
+460  module load samtools
+686  featureCounts -T 8 -p -M --fraction -t exon -g gene_id -a /scratch/lmarla/rna_seq_data/genome_annotations/Mus_musculus.GRCm39.110.gtf -o /scratch/lmarla/rna_seq_data/feature_counts_K16/gene_counts_fixed_W16.txt  W16-LCL9043_L1_Aligned.sortedByCoord.out.bam
+692  cd .
+699  cat  gene_counts_fixed_W16.txt.summary
+802  cat gene_counts.txt.summary
+810  cd ..
+981  multiqc .
